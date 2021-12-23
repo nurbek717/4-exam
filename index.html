@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./css/main.css">
- <title>4-imtihon</title>
-</head>
-<body>
- <script src="./js/main.js"></script>
-</body>
-</html>
+<htmly lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<title>4-imtihon</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- //header -->
+			<header class="header">
+				<h1 class="text-center mt-3">Users API</h1>
+				<hr class="m-0 mb-4">
+			</header>
+			<!-- main -->
+			
+			
+			<main class="main d-flex">
+				<!-- left -->
+				<div class="main__left">
+					<h2 class="fw-bold"> Users</h2>
+					<p id="title">Cound of users: 0</p>
+					<ul class="main__users__list p-0" id="main-users-list">
+						
+					</ul>
+				</div>
+				<!-- center -->
+				<div class="main__center">
+					<h2 class="fw-bold"> Posts</h2>
+					<p id="title-two">Cound of posts: 0</p>
+					<ul class="main__users__list p-0" id="main-postes-list">
+						
+					</ul>
+				</div>
+				<!-- right -->
+				<div class="main__right">
+					<h2 class="fw-bold"> Comments</h2>
+					<p id="title-thre">Cound of comment: 0</p>
+					<ul class="main__users__list p-0" id="main-comments-list">
+						
+					</ul>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer mt-4">
+				<h6 class="fw-bold bg-secondary p-3 rounded	text-center text-light">@ 2021 year</h6>
+			</footer>
+			
+			<template id="render-users-template">
+				<li class="main__users__item d-flex flex-column align-items-start" id="main-users-item">
+					<a class="fw-bold fs-5" id="user-link" href="#"></a>
+					<p class="m-0" id="user-email"></p>
+					<p class=" m-0" id="user-country" ></p>
+					<p class=" m-0" id="user-company"></p>
+					<a  href="#" class=" m-0"  id="user-website"></a>
+				</li>
+			</template>
+
+			<template id="render-posts-template">
+				<li class="main__posts__item  d-flex flex-column  align-items-start" id="main-posts-item">
+					<h3 class="fw-bold fs-5 mb-4" id="posts-titl"></h3>
+					<p class="m-0" id="posts-body"></p>
+				</li>
+			</template>
+
+			<template id="render-comment-template">
+				<li class="main__comments__item  " id="main-comments-item">
+					<h3 class="fw-bold fs-5" id="comment-name"></h3>
+					<b class="fw-bold">Email: <a class="m-0 " href="#" id="comment-link"></a></b>
+					<p class="m-0" id="comment-text"></p>
+				</li>
+			</template>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+	</htmly
